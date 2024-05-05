@@ -12,3 +12,5 @@ if SHIELD_COSMOMINI_LEFT || SHIELD_COSMOMINI_RIGHT
 
 config ZMK_SPLIT
     default y
+
+endif
