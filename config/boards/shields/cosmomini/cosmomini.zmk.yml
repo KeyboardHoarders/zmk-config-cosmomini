@@ -1,0 +1,11 @@
+file_format: "1"
+id: cosmomini
+name: cosmomini
+type: shield
+url: https://github.com/SlingThat/zmk-config-cosmomini
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - cosmomini_left
+  - cosmomini_right
