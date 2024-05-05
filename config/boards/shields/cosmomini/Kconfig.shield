@@ -1,2 +1,5 @@
-config SHIELD_COSMOMINI
-    def_bool $(shields_list_contains,comsomini)
+config SHIELD_COSMOMINI_LEFT
+    def_bool $(shields_list_contains,cosmomini_left)
+
+config SHIELD_COSMOMINI_RIGHT
+    def_bool $(shields_list_contains,cosmomini_right)

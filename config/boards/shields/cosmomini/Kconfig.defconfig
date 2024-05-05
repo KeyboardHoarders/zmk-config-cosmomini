@@ -1,6 +1,14 @@
-if SHIELD_COSMOMINI
+if SHIELD_COSMOMINI_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "comsomini"
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
 endif
+
+if SHIELD_COSMOMINI_LEFT || SHIELD_COSMOMINI_RIGHT
+
+config ZMK_SPLIT
+    default y
