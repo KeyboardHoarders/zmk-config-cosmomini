@@ -1,0 +1,6 @@
+if SHIELD_COSMOMINI
+
+config ZMK_KEYBOARD_NAME
+    default "comsomini"
+
+endif
