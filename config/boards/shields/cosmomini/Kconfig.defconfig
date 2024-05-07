@@ -1,4 +1,4 @@
-if SHIELD_COSMOMINI_RIGHT
+if SHIELD_COSMOMINI_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "comsomini"
