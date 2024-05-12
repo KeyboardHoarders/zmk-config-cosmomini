@@ -9,6 +9,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 15>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <10 24>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,6 +78,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        l3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
